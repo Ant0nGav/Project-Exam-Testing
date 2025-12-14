@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,7 +32,12 @@ namespace Вид
 
         private void BtnReview_click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("Укажите файл с ответами");
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.ShowDialog();
+            string file_path = ofd.FileName;
+            Window_Review wr = new Window_Review(file_path);
+            wr.ShowDialog();
         }
     }
 }

@@ -30,3 +30,6 @@ C:\Users\Z\Desktop\Project\Вид\Вид\obj\Debug\Вид.csproj.GenerateResourc
 C:\Users\Z\Desktop\Project\Вид\Вид\obj\Debug\Вид.csproj.CoreCompileInputs.cache
 C:\Users\Z\Desktop\Project\Вид\Вид\obj\Debug\Вид.exe
 C:\Users\Z\Desktop\Project\Вид\Вид\obj\Debug\Вид.pdb
+C:\Users\Z\Desktop\Project\Вид\Вид\obj\Debug\Window_Review.g.cs
+C:\Users\Z\Desktop\Project\Вид\Вид\obj\Debug\Вид_MarkupCompile.lref
+C:\Users\Z\Desktop\Project\Вид\Вид\obj\Debug\Window_Review.baml

@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\window_review.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\window_review.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|c:\\users\\z\\desktop\\project\\\u0432\u0438\u0434\\\u0432\u0438\u0434\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|c:\\users\\z\\desktop\\project\\\u0432\u0438\u0434\\\u0432\u0438\u0434\\window_review.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\window_review.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|solutionrelative:HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\window2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\window2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|solutionrelative:HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +38,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Window_Review.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window_Review.xaml.cs",
+              "RelativeDocumentMoniker": "\u0412\u0438\u0434\\Window_Review.xaml.cs",
+              "ToolTip": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window_Review.xaml.cs",
+              "RelativeToolTip": "\u0412\u0438\u0434\\Window_Review.xaml.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAF0AAAB8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T17:03:24.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Window_Review.xaml",
+              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window_Review.xaml",
+              "RelativeDocumentMoniker": "\u0412\u0438\u0434\\Window_Review.xaml",
+              "ToolTip": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window_Review.xaml",
+              "RelativeToolTip": "\u0412\u0438\u0434\\Window_Review.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-14T16:56:37.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Window2.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window2.xaml.cs",
               "RelativeDocumentMoniker": "\u0412\u0438\u0434\\Window2.xaml.cs",
@@ -46,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Window2.xaml",
               "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window2.xaml",
               "RelativeDocumentMoniker": "\u0412\u0438\u0434\\Window2.xaml",
@@ -57,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "HTMLPage1.html",
               "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\HTMLPage1.html",
               "RelativeDocumentMoniker": "HTMLPage1.html",
@@ -69,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml",
               "RelativeDocumentMoniker": "\u0412\u0438\u0434\\MainWindow.xaml",
@@ -81,16 +114,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "\u0412\u0438\u0434\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml.cs",
               "RelativeToolTip": "\u0412\u0438\u0434\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAhwCAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T11:24:32.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T11:24:32.843Z"
             }
           ]
         }

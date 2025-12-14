@@ -6,13 +6,17 @@
         Background="#FEFEFE" WindowStartupLocation="CenterScreen">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="271*"/>
+            <RowDefinition Height="363*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="360"/>
         </Grid.ColumnDefinitions>
 
         <!-- Основная прокручиваемая область -->
-        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="10,10,10,10" Grid.RowSpan="2">
             <StackPanel x:Name="TasksPanel" >
                 <!-- Пример одной строки -->
                 <Border BorderBrush="#2D6DFE" BorderThickness="2" CornerRadius="10" Padding="10">
@@ -59,7 +63,7 @@
         </ScrollViewer>
 
         <!-- Правая панель -->
-        <Border Grid.Column="1" Background="#2D6DFE" Padding="20">
+        <Border Grid.Column="1" Background="#2D6DFE" Padding="20" Grid.RowSpan="2">
             <StackPanel >
 
                 <TextBlock Text="Создание варианта" FontSize="28" FontWeight="Bold" Foreground="White" TextAlignment="Center"/>
