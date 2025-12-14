@@ -1,26 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\",
+  "WorkspaceRootPath": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|c:\\users\\1\\desktop\\ubn\\project-exam-testing\\\u0432\u0438\u0434\\\u0432\u0438\u0434\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|c:\\users\\1\\desktop\\ubn\\project-exam-testing\\\u0432\u0438\u0434\\\u0432\u0438\u0434\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|c:\\users\\z\\desktop\\project\\\u0432\u0438\u0434\\\u0432\u0438\u0434\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|c:\\users\\1\\desktop\\ubn\\project-exam-testing\\\u0432\u0438\u0434\\\u0432\u0438\u0434\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|solutionrelative:HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\window2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|c:\\users\\1\\desktop\\ubn\\project-exam-testing\\\u0432\u0438\u0434\\\u0432\u0438\u0434\\window2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\window2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\window2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|solutionrelative:HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,46 +30,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Window2.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window2.xaml.cs",
+              "RelativeDocumentMoniker": "\u0412\u0438\u0434\\Window2.xaml.cs",
+              "ToolTip": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window2.xaml.cs",
+              "RelativeToolTip": "\u0412\u0438\u0434\\Window2.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T12:45:24.262Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Window2.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window2.xaml.cs",
-              "RelativeDocumentMoniker": "\u0412\u0438\u0434\\Window2.xaml.cs",
-              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window2.xaml.cs",
-              "RelativeToolTip": "\u0412\u0438\u0434\\Window2.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T12:45:24.262Z",
-              "EditorCaption": ""
+              "Title": "Window2.xaml",
+              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window2.xaml",
+              "RelativeDocumentMoniker": "\u0412\u0438\u0434\\Window2.xaml",
+              "ToolTip": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window2.xaml",
+              "RelativeToolTip": "\u0412\u0438\u0434\\Window2.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-06T12:39:32.176Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Window2.xaml",
-              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window2.xaml",
-              "RelativeDocumentMoniker": "\u0412\u0438\u0434\\Window2.xaml",
-              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window2.xaml",
-              "RelativeToolTip": "\u0412\u0438\u0434\\Window2.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-06T12:39:32.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "HTMLPage1.html",
-              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\HTMLPage1.html",
+              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\HTMLPage1.html",
               "RelativeDocumentMoniker": "HTMLPage1.html",
-              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\HTMLPage1.html",
+              "ToolTip": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\HTMLPage1.html",
               "RelativeToolTip": "HTMLPage1.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-12-06T12:37:37.94Z",
               "EditorCaption": ""
@@ -78,9 +72,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml",
               "RelativeDocumentMoniker": "\u0412\u0438\u0434\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml",
               "RelativeToolTip": "\u0412\u0438\u0434\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-06T11:24:33.579Z",
@@ -90,11 +84,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "\u0412\u0438\u0434\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Z\\Desktop\\Project\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml.cs",
               "RelativeToolTip": "\u0412\u0438\u0434\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAIAwwBcAAAAAAAAA",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAhwBwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T11:24:32.843Z",
               "EditorCaption": ""
