@@ -33,7 +33,7 @@ Title="Demid Informatics" Height="600" Width="1000" Background="#FEFEFE">
                     </TextBlock.RenderTransform>
                 </TextBlock>
                 <Button Content="Создать вариант" Height="45" FontSize="16" Background="White" Foreground="#2D6DFE" x:Name="BtnCreate" Click="BtnCreate_Click"/>
-                <Button Content="Проверить вариант" Height="45" FontSize="16" Background="White" Foreground="#2D6DFE"/>
+                <Button x:Name="BtnReview" Content="Проверить вариант" Height="45" FontSize="16" Background="White" Foreground="#2D6DFE" Click="BtnReview_click"/>
             </StackPanel>
         </Grid>
     </Grid>

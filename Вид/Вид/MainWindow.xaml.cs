@@ -27,5 +27,10 @@ namespace Вид
             Window2 win = new Window2();
             win.ShowDialog();
         }
+
+        private void BtnReview_click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
