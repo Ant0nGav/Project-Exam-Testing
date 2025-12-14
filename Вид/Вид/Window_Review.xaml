@@ -1,0 +1,44 @@
+﻿<Window x:Class="Вид.Window_Review"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Вид"
+        mc:Ignorable="d"
+        Title="Проверка варианта" Height="734" Width="1162"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="350"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1" Background="#2D6DFE">
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="330" Margin="0,227,0,0">
+                <TextBlock x:Name="TotalPoints" Text="Количество верных ответов: " FontSize="18" Foreground="White" FontWeight="Bold" TextAlignment="Center" Margin="0 0 0 20" RenderTransformOrigin="0.507,-0.7" Width="330">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.071"/>
+                            <TranslateTransform X="-0.044" Y="-0.002"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="100" Margin="0,276,0,0">
+                <TextBlock x:Name="TotalPoints2" Text="0 из 27" FontSize="18" Foreground="White" FontWeight="Bold" TextAlignment="Center" Margin="0 0 0 20" RenderTransformOrigin="0.507,-0.7" Width="100">
+                    <TextBlock.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.071"/>
+                            <TranslateTransform X="-0.044" Y="-0.002"/>
+                        </TransformGroup>
+                    </TextBlock.RenderTransform>
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+        <ListBox x:Name="CheckedTasks" d:ItemsSource="{d:SampleData ItemCount=27}" FontSize="15"/>
+    </Grid>
+</Window>
