@@ -19,6 +19,7 @@ namespace Вид
 {
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
@@ -26,9 +27,13 @@ namespace Вид
 
         private void BtnCreate_Click(object sender, RoutedEventArgs e)
         {
-            Window2 win = new Window2();
-            win.ShowDialog();
+            // Открываем окно создания варианта
+            FioInputDialog createVariantWindow = new FioInputDialog();
+            createVariantWindow.Owner = this;
+            createVariantWindow.ShowDialog();
+
         }
+            
 
         private void BtnReview_click(object sender, RoutedEventArgs e)
         {
