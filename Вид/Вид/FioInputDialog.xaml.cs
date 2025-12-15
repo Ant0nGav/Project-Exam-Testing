@@ -20,6 +20,11 @@ namespace Вид
     /// </summary>
     public partial class FioInputDialog : Window
     {
+        // Пути к уже существующим папкам
+        private const string BASE_PATH = @"C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид";
+        private string userTasksPath = @"C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид\Users_Tasks";
+        private string userAnswersPath = @"C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид\Users_answers";
+
         private string selectedVariantPath;
 
         public FioInputDialog()
@@ -30,7 +35,41 @@ namespace Вид
 
         private void CreateVariantWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            // Инициализация компонентов
+            // Проверяем существование базовых папок
+            CheckBaseFolders();
+        }
+
+        private void CheckBaseFolders()
+        {
+            try
+            {
+                if (!Directory.Exists(BASE_PATH))
+                {
+                    AppendLog($"ВНИМАНИЕ: Базовая папка не найдена: {BASE_PATH}");
+                    AppendLog("Создайте папку или проверьте путь.");
+                }
+                else
+                {
+                    AppendLog($"Базовая папка: {BASE_PATH}");
+
+                    // Создаем подпапки, если их нет
+                    if (!Directory.Exists(userTasksPath))
+                    {
+                        Directory.CreateDirectory(userTasksPath);
+                        AppendLog($"Создана папка: {userTasksPath}");
+                    }
+
+                    if (!Directory.Exists(userAnswersPath))
+                    {
+                        Directory.CreateDirectory(userAnswersPath);
+                        AppendLog($"Создана папка: {userAnswersPath}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                AppendLog($"Ошибка при проверке папок: {ex.Message}");
+            }
         }
 
         private void btnBrowseVariants_Click(object sender, RoutedEventArgs e)
@@ -107,16 +146,14 @@ namespace Вид
 
                 AppendLog($"Начинаем создание варианта для: {fullName}");
                 AppendLog($"Выбранный вариант: {selectedVariant}");
+                AppendLog($"Задания будут сохранены в: {userTasksPath}");
+                AppendLog($"Ответы будут сохранены в: {userAnswersPath}");
 
-                // Создаем структуру папок для пользователя
+                // Создаем структуру для пользователя
                 CreateUserVariant(fullName, selectedVariantPath);
 
                 MessageBox.Show($"Вариант успешно создан для {fullName}!", "Успех",
                     MessageBoxButton.OK, MessageBoxImage.Information);
-
-                // Можно закрыть окно после успешного создания
-                // this.DialogResult = true;
-                // this.Close();
             }
             catch (Exception ex)
             {
@@ -166,34 +203,50 @@ namespace Вид
                 throw new DirectoryNotFoundException("Не найдена папка с заданиями в выбранном варианте");
             }
 
-            // Создаем корневую папку пользователя на том же уровне, где лежат варианты
-            string userRootPath = System.IO.Path.GetDirectoryName(variantPath);
-            string userFolderName = $"{fullName.Replace(" ", "_")}";
-            string userFolderPath = System.IO.Path.Combine(userRootPath, userFolderName);
-
-            AppendLog($"Создаем папку пользователя: {userFolderPath}");
-
-            if (Directory.Exists(userFolderPath))
+            // Проверяем существование целевых папок
+            if (!Directory.Exists(userTasksPath))
             {
-                AppendLog($"Папка уже существует, очищаем...");
-                Directory.Delete(userFolderPath, true);
+                Directory.CreateDirectory(userTasksPath);
+                AppendLog($"Создана папка Users_Tasks: {userTasksPath}");
             }
 
-            Directory.CreateDirectory(userFolderPath);
+            if (!Directory.Exists(userAnswersPath))
+            {
+                Directory.CreateDirectory(userAnswersPath);
+                AppendLog($"Создана папка Users_answers: {userAnswersPath}");
+            }
 
-            // Создаем подпапки
-            string userTasksPath = System.IO.Path.Combine(userFolderPath, "Users_Tasks");
-            string userAnswersPath = System.IO.Path.Combine(userFolderPath, "Users_answers");
-
-            Directory.CreateDirectory(userTasksPath);
-            Directory.CreateDirectory(userAnswersPath);
+            // Создаем имя для папки заданий
+            string userTasksFolderName = $"{fullName.Replace(" ", "_")}_задания";
+            string userTasksFolderPath = System.IO.Path.Combine(userTasksPath, userTasksFolderName);
 
             // Копируем задания
-            AppendLog($"Копируем задания...");
-            CopyDirectory(tasksFolder, System.IO.Path.Combine(userTasksPath, $"{fullName.Replace(" ", "_")}_задания"));
+            AppendLog($"Копируем задания в: {userTasksFolderPath}");
+
+            if (Directory.Exists(userTasksFolderPath))
+            {
+                var result = MessageBox.Show($"Папка {userTasksFolderName} уже существует. Перезаписать?",
+                    "Подтверждение", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+                if (result == MessageBoxResult.Yes)
+                {
+                    Directory.Delete(userTasksFolderPath, true);
+                    AppendLog($"Удалена существующая папка: {userTasksFolderName}");
+                }
+                else
+                {
+                    AppendLog("Операция отменена пользователем");
+                    return;
+                }
+            }
+
+            CopyDirectory(tasksFolder, userTasksFolderPath);
 
             // Копируем или создаем файл с ответами
             AppendLog($"Создаем файл ответов...");
+
+            string userAnswersFileName = $"{fullName.Replace(" ", "_")}.txt";
+            string userAnswersFilePath = System.IO.Path.Combine(userAnswersPath, userAnswersFileName);
 
             if (answersFolder != null)
             {
@@ -202,29 +255,26 @@ namespace Вид
                 if (answerFiles.Length > 0)
                 {
                     answersFile = answerFiles[0];
-                    string destAnswersFile = System.IO.Path.Combine(userAnswersPath, $"{fullName.Replace(" ", "_")}.txt");
-                    File.Copy(answersFile, destAnswersFile, true);
-                    AppendLog($"Скопирован файл ответов: {System.IO.Path.GetFileName(answersFile)}");
+                    File.Copy(answersFile, userAnswersFilePath, true);
+                    AppendLog($"Скопирован файл ответов: {System.IO.Path.GetFileName(answersFile)} -> {userAnswersFileName}");
                 }
                 else
                 {
                     // Создаем пустой файл ответов
-                    string destAnswersFile = System.IO.Path.Combine(userAnswersPath, $"{fullName.Replace(" ", "_")}.txt");
-                    File.WriteAllText(destAnswersFile, $"Ответы для {fullName}\nВариант: {System.IO.Path.GetFileName(variantPath)}");
-                    AppendLog($"Создан новый файл ответов");
+                    File.WriteAllText(userAnswersFilePath, $"Ответы для {fullName}\nВариант: {System.IO.Path.GetFileName(variantPath)}\nДата создания: {DateTime.Now:dd.MM.yyyy HH:mm}");
+                    AppendLog($"Создан новый файл ответов: {userAnswersFileName}");
                 }
             }
             else
             {
                 // Создаем пустой файл ответов
-                string destAnswersFile = System.IO.Path.Combine(userAnswersPath, $"{fullName.Replace(" ", "_")}.txt");
-                File.WriteAllText(destAnswersFile, $"Ответы для {fullName}\nВариант: {System.IO.Path.GetFileName(variantPath)}");
-                AppendLog($"Создан новый файл ответов (папка ответов не найдена)");
+                File.WriteAllText(userAnswersFilePath, $"Ответы для {fullName}\nВариант: {System.IO.Path.GetFileName(variantPath)}\nДата создания: {DateTime.Now:dd.MM.yyyy HH:mm}");
+                AppendLog($"Создан новый файл ответов: {userAnswersFileName} (папка ответов не найдена)");
             }
 
-            AppendLog($"Вариант успешно создан в папке: {userFolderPath}");
-            AppendLog($"Задания: {System.IO.Path.Combine(userTasksPath, $"{fullName.Replace(" ", "_")}_задания")}");
-            AppendLog($"Ответы: {System.IO.Path.Combine(userAnswersPath, $"{fullName.Replace(" ", "_")}.txt")}");
+            AppendLog($"Вариант успешно создан!");
+            AppendLog($"Задания сохранены в: {userTasksFolderPath}");
+            AppendLog($"Ответы сохранены в: {userAnswersFilePath}");
         }
 
         private void CopyDirectory(string sourceDir, string destinationDir)

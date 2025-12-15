@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:Вид"
         mc:Ignorable="d"
         Title="Создание варианта для участника" 
-        Height="450" 
-        Width="600"
+        Height="500" 
+        Width="700"
         WindowStartupLocation="CenterOwner">
     <Grid Margin="10">
         <Grid.RowDefinitions>
@@ -21,13 +21,23 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
+        <!-- Информация о путях -->
+        <Border Grid.Row="0" Background="LightBlue" Margin="0,0,0,10" Padding="5">
+            <StackPanel>
+                <TextBlock Text="Задания будут сохранены в:" FontWeight="Bold"/>
+                <TextBlock x:Name="txtTasksPath" Text="C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид\Users_Tasks"/>
+                <TextBlock Text="Ответы будут сохранены в:" FontWeight="Bold" Margin="0,5,0,0"/>
+                <TextBlock x:Name="txtAnswersPath" Text="C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид\Users_answers"/>
+            </StackPanel>
+        </Border>
+
         <!-- ФИО -->
-        <Label Grid.Row="0" Content="ФИО участника:" Margin="0,0,0,5"/>
-        <TextBox x:Name="txtFullName" Grid.Row="1" Margin="0,0,0,10" Height="25"/>
+        <Label Grid.Row="1" Content="ФИО участника:" Margin="0,0,0,5"/>
+        <TextBox x:Name="txtFullName" Grid.Row="2" Margin="0,0,0,10" Height="25"/>
 
         <!-- Путь к папке с вариантами -->
-        <Label Grid.Row="2" Content="Путь к папке с вариантами:" Margin="0,0,0,5"/>
-        <Grid Grid.Row="3" Margin="0,0,0,10">
+        <Label Grid.Row="3" Content="Путь к папке с вариантами:" Margin="0,0,0,5"/>
+        <Grid Grid.Row="4" Margin="0,0,0,10">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
@@ -38,17 +48,17 @@
         </Grid>
 
         <!-- Выбор варианта -->
-        <Label Grid.Row="4" Content="Выберите вариант:" Margin="0,0,0,5"/>
-        <ComboBox x:Name="cmbVariants" Grid.Row="5" Margin="0,0,0,15" Height="25"/>
+        <Label Grid.Row="5" Content="Выберите вариант:" Margin="0,0,0,5"/>
+        <ComboBox x:Name="cmbVariants" Grid.Row="6" Margin="0,0,0,15" Height="25"/>
 
         <!-- Лог выполнения -->
-        <Label Grid.Row="6" Content="Лог выполнения:" Margin="0,0,0,5"/>
-        <TextBox x:Name="txtLog" Grid.Row="6" Margin="0,25,0,0" IsReadOnly="True" 
+        <Label Grid.Row="7" Content="Лог выполнения:" Margin="0,0,0,5"/>
+        <TextBox x:Name="txtLog" Grid.Row="7" Margin="0,25,0,0" IsReadOnly="True" 
                  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"
                  TextWrapping="Wrap"/>
 
         <!-- Кнопки -->
-        <StackPanel Grid.Row="7" Orientation="Horizontal" HorizontalAlignment="Right">
+        <StackPanel Grid.Row="8" Orientation="Horizontal" HorizontalAlignment="Right">
             <Button x:Name="btnCreate" Content="Создать" Width="100" Height="30" 
                     Margin="0,0,10,0" Click="btnCreate_Click"/>
             <Button x:Name="btnCancel" Content="Отмена" Width="100" Height="30" 
