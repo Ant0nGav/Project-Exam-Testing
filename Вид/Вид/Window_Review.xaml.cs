@@ -77,32 +77,57 @@ namespace Вид
             return path;
         }
 
+        //Функция улучшает внешний вид правильных ответов
+        private string[] GetBetterView(string right_answers)
+        {
+            using (StreamReader sr = new StreamReader(right_answers))
+            {
+                string[] better_view = new string[27];
+                for (int i = 0; i < 24; i++)
+                {
+                    better_view[i] = sr.ReadLine();
+                }
+                string temp = sr.ReadLine();
+                string task25 = temp;
+                while (temp.Substring(0, 4) != "26 -")
+                {
+                    temp = sr.ReadLine();
+                    if (temp == "")
+                        temp = sr.ReadLine();
+                    if (temp.Substring(0, 4) == "26 -")
+                        break;
+                    task25 += $", {temp}";
+                }
+                better_view[24] = task25;
+                better_view[25] = temp;
+                better_view[26] = sr.ReadLine();
+                return better_view;
+            }
+        }
         //Функция сравнивает ответы участника с правильными ответами, считает количество правильных ответов и выводит неправильные ответы участника
         private void ComparingAnswers(string right_answers, string user_answers)
         {
             int total = 0;
-            using (StreamReader sr = new StreamReader(right_answers))
+            string[] better_view = GetBetterView(right_answers);
+            using (StreamReader sr2 = new StreamReader(user_answers))
             {
-                using (StreamReader sr2 = new StreamReader(user_answers))
+                for (int i = 1; i <= 27; i++)
                 {
-                    for (int i = 1; i <= 27; i++)
+                    string line = better_view[i - 1];
+                    string line2 = sr2.ReadLine();
+                    if (line == line2)
                     {
-                        string line = sr.ReadLine();
-                        string line2 = sr2.ReadLine();
-                        if (line == line2)
+                        CheckedTasks.Items.Add(new ListBoxItem { Content = $"{i}. Верно", Foreground = Brushes.Green });
+                        total += 1;
+                    }
+                    else
+                    {
+                        for (int j = 0; j < line.Length; j++)
                         {
-                            CheckedTasks.Items.Add(new ListBoxItem { Content = $"{i}. Верно", Foreground = Brushes.Green });
-                            total += 1;
-                        }
-                        else
-                        {
-                            for (int j = 0; j < line.Length; j++)
+                            if (line[j] == '-')
                             {
-                                if (line[j] == '-')
-                                {
-                                    CheckedTasks.Items.Add(new ListBoxItem { Content = $"{i}. Неверно | Правильный ответ: {line.Substring(j + 1, line.Length - j - 1)} | Ответ участника: {line2.Substring(j + 1, line2.Length - j - 1)}", Foreground = Brushes.Red });
-                                    break;
-                                }
+                                CheckedTasks.Items.Add(new ListBoxItem { Content = $"{i}. Неверно | Правильный ответ: {line.Substring(j + 1, line.Length - j - 1)} | Ответ участника: {line2.Substring(j + 1, line2.Length - j - 1)}", Foreground = Brushes.Red });
+                                break;
                             }
                         }
                     }
