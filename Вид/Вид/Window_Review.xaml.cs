@@ -74,20 +74,48 @@ namespace Вид
                     better_view[i] = sr.ReadLine();
                 }
                 string temp = sr.ReadLine();
-                string task25 = temp;
-                while (temp.Substring(0, 4) != "26 -")
+                if (temp.Length > 28)
                 {
-                    temp = sr.ReadLine();
-                    if (temp == "")
-                        temp = sr.ReadLine();
-                    if (temp.Substring(0, 4) == "26 -")
-                        break;
-                    task25 += $", {temp}";
+                    temp = temp.Substring(5, temp.Length - 5);
+                    string[] split = temp.Split(' ');
+                    string answer = "25 - ";
+                    for (int i = 0; i < split.Length; i++)
+                    {
+                        answer += split[i];
+                        if (i != split.Length - 1)
+                        {
+                            if (i % 2 == 0 && i != split.Length - 1)
+                            {
+                                answer += " ";
+                            }
+                            else if (i % 2 == 1 && i != split.Length - 1)
+                            {
+                                answer = answer + ", ";
+                            }
+                        }
+                    }
+                    better_view[24] = answer;
+                    better_view[25] = sr.ReadLine();
+                    better_view[26] = sr.ReadLine();
+                    return better_view;
                 }
-                better_view[24] = task25;
-                better_view[25] = temp;
-                better_view[26] = sr.ReadLine();
-                return better_view;
+                else
+                {
+                    string task25 = temp;
+                    while (temp.Substring(0, 4) != "26 -")
+                    {
+                        temp = sr.ReadLine();
+                        if (temp == "")
+                            temp = sr.ReadLine();
+                        if (temp.Substring(0, 4) == "26 -")
+                            break;
+                        task25 += $", {temp}";
+                    }
+                    better_view[24] = task25;
+                    better_view[25] = temp;
+                    better_view[26] = sr.ReadLine();
+                    return better_view;
+                }
             }
         }
         //Функция сравнивает ответы участника с правильными ответами, считает количество правильных ответов и выводит неправильные ответы участника
