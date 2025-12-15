@@ -23,11 +23,11 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <!-- ФИО -->
+        
         <Label Grid.Row="0" Content="ФИО участника:" Margin="0,0,0,5"/>
         <TextBox x:Name="txtFullName" Grid.Row="1" Margin="0,0,0,10" Height="25"/>
 
-        <!-- Путь к папке с вариантами -->
+        
         <Label Grid.Row="2" Content="Путь к папке с вариантами:" Margin="0,0,0,5"/>
         <Grid Grid.Row="3" Margin="0,0,0,10">
             <Grid.ColumnDefinitions>
@@ -39,21 +39,17 @@
                     Margin="5,0,0,0" Width="80" Click="btnBrowseVariants_Click"/>
         </Grid>
 
-        <!-- Выбор варианта -->
+        
         <Label Grid.Row="4" Content="Выберите вариант:" Margin="0,0,0,5"/>
         <ComboBox x:Name="cmbVariants" Grid.Row="5" Margin="0,0,0,15" Height="25"/>
 
 
-
-
-
-        <!-- Лог выполнения -->
         <Label Grid.Row="8" Content="Лог выполнения:" Margin="0,75,0,0" HorizontalAlignment="Left" Width="622" Height="27" VerticalAlignment="Top"/>
         <TextBox x:Name="txtLog" Grid.Row="8" Margin="0,124,0,80" IsReadOnly="True" 
                  VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto"
                  TextWrapping="Wrap" Grid.RowSpan="2"/>
 
-        <!-- Кнопки -->
+        
         <StackPanel Grid.Row="9" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,135,0,-5" RenderTransformOrigin="0.524,0.303">
             <Button x:Name="btnCreate" Content="Создать" Width="100" Height="30" 
                     Margin="0,0,10,0" Click="btnCreate_Click"/>

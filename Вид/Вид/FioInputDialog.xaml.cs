@@ -16,9 +16,6 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 namespace Вид
 {
-    /// <summary>
-    /// Логика взаимодействия для FioInputDialog.xaml
-    /// </summary>
     public partial class FioInputDialog : Window
     {
         private string selectedVariantPath;
@@ -117,7 +114,7 @@ namespace Вид
                 AppendLog($"Задания будут сохранены в: {userTasksPath}");
                 AppendLog($"Ответы будут сохранены в: {userAnswersPath}");
 
-                // Создаем структуру для пользователя
+                //Создаем структуру для пользователя
                 CreateUserVariant(fullName, selectedVariantPath);
 
                 MessageBox.Show($"Вариант успешно создан для {fullName}!", "Успех",
@@ -135,13 +132,13 @@ namespace Вид
         {
             AppendLog($"Анализируем структуру папки варианта...");
 
-            // Проверяем существование папки варианта
+            //Проверяем существование папки варианта
             if (!Directory.Exists(variantPath))
             {
                 throw new DirectoryNotFoundException($"Папка варианта не найдена: {variantPath}");
             }
 
-            // Проверяем существование папок для сохранения
+            //Проверяем существование папок для сохранения
             if (!Directory.Exists(userTasksPath))
             {
                 var result = MessageBox.Show($"Папка для заданий не существует:\n{userTasksPath}\n\nСоздать папку?",
@@ -176,7 +173,7 @@ namespace Вид
                 }
             }
 
-            // Ищем папки "задание" и "ответы" (учтем возможные варианты написания)
+            //Ищем папки "задание" и "ответы"
             string[] subDirectories = Directory.GetDirectories(variantPath);
 
             string tasksFolder = null;
@@ -206,11 +203,11 @@ namespace Вид
                 throw new DirectoryNotFoundException("Не найдена папка с заданиями в выбранном варианте");
             }
 
-            // Создаем имя для папки заданий
+            //Создаем имя для папки заданий
             string userTasksFolderName = $"{fullName.Replace(" ", "")}_задания";
             string userTasksFolderPath = System.IO.Path.Combine(userTasksPath, userTasksFolderName);
 
-            // Копируем задания
+            //Копируем задания
             AppendLog($"Копируем задания в: {userTasksFolderPath}");
 
             if (Directory.Exists(userTasksFolderPath))
@@ -232,7 +229,7 @@ namespace Вид
 
             CopyDirectory(tasksFolder, userTasksFolderPath);
 
-            // Копируем или создаем файл с ответами
+            //Копируем или создаем файл с ответами
             AppendLog($"Создаем файл ответов...");
 
             string userAnswersFileName = $"{fullName.Replace(" ", "")}.txt";
@@ -240,7 +237,7 @@ namespace Вид
 
             if (answersFolder != null)
             {
-                // Ищем текстовый файл с ответами в папке answers
+                //Ищем текстовый файл с ответами в папке answers
                 var answerFiles = Directory.GetFiles(answersFolder, "*.txt");
                 if (answerFiles.Length > 0)
                 {
@@ -250,18 +247,18 @@ namespace Вид
                 }
                 else
                 {
-                    // Ищем любые файлы в папке answers
+                    //Ищем любые файлы в папке answers
                     var allFiles = Directory.GetFiles(answersFolder);
                     if (allFiles.Length > 0)
                     {
-                        // Копируем первый найденный файл
+                        //Копируем первый найденный файл
                         answersFile = allFiles[0];
                         File.Copy(answersFile, userAnswersFilePath, true);
                         AppendLog($"Скопирован файл: {System.IO.Path.GetFileName(answersFile)} -> {userAnswersFileName}");
                     }
                     else
                     {
-                        // Создаем пустой файл ответов
+                        //Создаем пустой файл ответов
                         File.WriteAllText(userAnswersFilePath,
                             $"Ответы для: {fullName}\n" +
                             $"Вариант: {System.IO.Path.GetFileName(variantPath)}\n" +
@@ -274,7 +271,7 @@ namespace Вид
             }
             else
             {
-                // Создаем пустой файл ответов
+                //Создаем пустой файл ответов
                 File.WriteAllText(userAnswersFilePath,
                     $"Ответы для: {fullName}\n" +
                     $"Вариант: {System.IO.Path.GetFileName(variantPath)}\n" +
@@ -302,7 +299,7 @@ namespace Вид
 
             Directory.CreateDirectory(destinationDir);
 
-            // Копируем все файлы
+            //Копируем все файлы
             foreach (FileInfo file in dir.GetFiles())
             {
                 string targetFilePath = System.IO.Path.Combine(destinationDir, file.Name);
@@ -310,7 +307,7 @@ namespace Вид
                 AppendLog($"  Скопирован файл: {file.Name}");
             }
 
-            // Рекурсивно копируем поддиректории
+            //Копируем поддиректории
             foreach (DirectoryInfo subDir in dir.GetDirectories())
             {
                 string newDestinationDir = System.IO.Path.Combine(destinationDir, subDir.Name);

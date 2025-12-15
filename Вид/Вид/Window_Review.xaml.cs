@@ -16,9 +16,6 @@ using System.Xml.Linq;
 
 namespace Вид
 {
-    /// <summary>
-    /// Логика взаимодействия для Window_Review.xaml
-    /// </summary>
     public partial class Window_Review : Window
     {
         public Window_Review(string file_path, string answers)

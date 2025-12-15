@@ -9,7 +9,6 @@ Title="Demid Informatics" Height="600" Width="1000" Background="#FEFEFE">
         </Grid.ColumnDefinitions>
 
 
-        <!-- Левая часть -->
         <Grid Background="#FEFEFE">
             <StackPanel Margin="40">
                 <TextBlock Text="Demid" FontSize="48" FontFamily="Rajdhani" FontWeight="SemiBold" Foreground="#2D6DFE"/>
@@ -19,7 +18,6 @@ Title="Demid Informatics" Height="600" Width="1000" Background="#FEFEFE">
         </Grid>
 
 
-        <!-- Правая панель -->
         <Grid Grid.Column="1" Background="#2D6DFE">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="250">
                 <TextBlock Text="Подготовка вариантов" FontSize="22" Foreground="White" FontWeight="Bold" TextAlignment="Center" Margin="0 0 0 20" RenderTransformOrigin="0.5,0.5" Width="246">
