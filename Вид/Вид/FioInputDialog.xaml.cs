@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 namespace Вид
 {
@@ -24,17 +25,17 @@ namespace Вид
         private string userTasksPath;
         private string userAnswersPath;
 
-        public FioInputDialog()
+        public FioInputDialog(string tasks, string answers)
         {
             InitializeComponent();
+            userAnswersPath = answers;
+            userTasksPath = tasks;
             Loaded += CreateVariantWindow_Loaded;
         }
 
         private void CreateVariantWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            // Устанавливаем начальные пути (можно изменить на часто используемые)
-            txtTasksSavePath.Text = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            txtAnswersSavePath.Text = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
         }
 
         private void btnBrowseVariants_Click(object sender, RoutedEventArgs e)
@@ -49,29 +50,7 @@ namespace Вид
             }
         }
 
-        private void btnBrowseTasksSave_Click(object sender, RoutedEventArgs e)
-        {
-            var dialog = new System.Windows.Forms.FolderBrowserDialog();
-            dialog.Description = "Выберите папку для сохранения заданий";
-            dialog.SelectedPath = txtTasksSavePath.Text;
-
-            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                txtTasksSavePath.Text = dialog.SelectedPath;
-            }
-        }
-
-        private void btnBrowseAnswersSave_Click(object sender, RoutedEventArgs e)
-        {
-            var dialog = new System.Windows.Forms.FolderBrowserDialog();
-            dialog.Description = "Выберите папку для сохранения ответов";
-            dialog.SelectedPath = txtAnswersSavePath.Text;
-
-            if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                txtAnswersSavePath.Text = dialog.SelectedPath;
-            }
-        }
+        
 
         private void LoadVariants(string variantsPath)
         {
@@ -126,28 +105,12 @@ namespace Вид
                 return;
             }
 
-            if (string.IsNullOrWhiteSpace(txtTasksSavePath.Text))
-            {
-                MessageBox.Show("Выберите папку для сохранения заданий!", "Ошибка",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
-            if (string.IsNullOrWhiteSpace(txtAnswersSavePath.Text))
-            {
-                MessageBox.Show("Выберите папку для сохранения ответов!", "Ошибка",
-                    MessageBoxButton.OK, MessageBoxImage.Warning);
-                return;
-            }
-
             try
             {
                 string fullName = txtFullName.Text.Trim();
                 string variantsRootPath = txtVariantsPath.Text;
                 string selectedVariant = cmbVariants.SelectedItem.ToString();
                 selectedVariantPath = System.IO.Path.Combine(variantsRootPath, selectedVariant);
-                userTasksPath = txtTasksSavePath.Text;
-                userAnswersPath = txtAnswersSavePath.Text;
 
                 AppendLog($"Начинаем создание варианта для: {fullName}");
                 AppendLog($"Выбранный вариант: {selectedVariant}");
@@ -244,7 +207,7 @@ namespace Вид
             }
 
             // Создаем имя для папки заданий
-            string userTasksFolderName = $"{fullName.Replace(" ", "_")}_задания";
+            string userTasksFolderName = $"{fullName.Replace(" ", "")}_задания";
             string userTasksFolderPath = System.IO.Path.Combine(userTasksPath, userTasksFolderName);
 
             // Копируем задания
@@ -272,7 +235,7 @@ namespace Вид
             // Копируем или создаем файл с ответами
             AppendLog($"Создаем файл ответов...");
 
-            string userAnswersFileName = $"{fullName.Replace(" ", "_")}.txt";
+            string userAnswersFileName = $"{fullName.Replace(" ", "")}.txt";
             string userAnswersFilePath = System.IO.Path.Combine(userAnswersPath, userAnswersFileName);
 
             if (answersFolder != null)

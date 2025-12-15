@@ -21,7 +21,7 @@ namespace Вид
     /// </summary>
     public partial class Window_Review : Window
     {
-        public Window_Review(string file_path)
+        public Window_Review(string file_path, string answers)
         {
             InitializeComponent();
 
@@ -29,7 +29,7 @@ namespace Вид
             string name = GetNameOfUser(file_path);
 
             //Получили его ответы
-            string path = GetFileWithAnswers(name);
+            string path = GetFileWithAnswers(name, answers);
 
             //Проверяем его ответы
             ComparingAnswers(path, file_path);
@@ -60,20 +60,9 @@ namespace Вид
         }
 
         //Функция находит правильные ответы участника
-        private string GetFileWithAnswers(string name)
+        private string GetFileWithAnswers(string name, string answers)
         {
-            string path = Directory.GetCurrentDirectory();
-            int bin = 0;
-            for (int i = 0; i < path.Length; i++)
-            {
-                if (path.Substring(i, 3) == "bin")
-                {
-                    bin = i;
-                    break;
-                }
-            }
-            path = path.Substring(0, bin - 1);
-            path = System.IO.Path.Combine(path, $"Users_Answers\\{name}.txt");
+            string path = System.IO.Path.Combine(answers, $"{name}.txt");
             return path;
         }
 
@@ -126,7 +115,14 @@ namespace Вид
                         {
                             if (line[j] == '-')
                             {
-                                CheckedTasks.Items.Add(new ListBoxItem { Content = $"{i}. Неверно | Правильный ответ: {line.Substring(j + 1, line.Length - j - 1)} | Ответ участника: {line2.Substring(j + 1, line2.Length - j - 1)}", Foreground = Brushes.Red });
+                                if (line2.Contains("%noanswer%"))
+                                {
+                                    CheckedTasks.Items.Add(new ListBoxItem { Content = $"{i}. Неверно | Правильный ответ: {line.Substring(j + 1, line.Length - j - 1)} | Ответ участника: Ответ не дан", Foreground = Brushes.Red });
+                                }
+                                else
+                                {
+                                    CheckedTasks.Items.Add(new ListBoxItem { Content = $"{i}. Неверно | Правильный ответ: {line.Substring(j + 1, line.Length - j - 1)} | Ответ участника: {line2.Substring(j + 1, line2.Length - j - 1)}", Foreground = Brushes.Red });
+                                }
                                 break;
                             }
                         }

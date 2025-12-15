@@ -72,9 +72,6 @@
     <Compile Include="FioInputDialog.xaml.cs">
       <DependentUpon>FioInputDialog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Window2.xaml.cs">
-      <DependentUpon>Window2.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Window_Review.xaml.cs">
       <DependentUpon>Window_Review.xaml</DependentUpon>
     </Compile>
@@ -94,10 +91,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Window2.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Window_Review.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
