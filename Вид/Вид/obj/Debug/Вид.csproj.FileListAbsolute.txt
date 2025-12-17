@@ -75,3 +75,5 @@ C:\Users\Z\Desktop\Project_Ege\Вид\Вид\obj\Debug\Вид.csproj.CoreCompile
 C:\Users\Z\Desktop\Project_Ege\Вид\Вид\obj\Debug\Вид.csproj.Up2Date
 C:\Users\Z\Desktop\Project_Ege\Вид\Вид\obj\Debug\Вид.exe
 C:\Users\Z\Desktop\Project_Ege\Вид\Вид\obj\Debug\Вид.pdb
+C:\Users\Z\Desktop\Project_Ege\Вид\Вид\bin\Debug\EgeOrganizator.dll
+C:\Users\Z\Desktop\Project_Ege\Вид\Вид\bin\Debug\EgeOrganizator.pdb

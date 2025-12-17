@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Xml.Linq;
+using EgeOrganizator;
 
 namespace Вид
 {
@@ -23,138 +24,29 @@ namespace Вид
             InitializeComponent();
 
             //Получили ФИО участника
-            string name = GetNameOfUser(file_path);
+            string name = EgeOrganizator.Validation.GetNameOfUser(file_path);
 
             //Получили его ответы
-            string path = GetFileWithAnswers(name, answers);
+            string path = EgeOrganizator.Validation.GetFileWithAnswers(name, answers);
 
-            //Проверяем его ответы
-            ComparingAnswers(path, file_path);
-        }
+            //Проверяем ответы
+            string[] check = EgeOrganizator.Validation.ComparingAnswers(path, file_path);
 
-        //Функция определяет ФИО участника
-        private string GetNameOfUser(string file_path)
-        {
-            int name_end = 0;
-            int name_start = 0;
-            for (int i = 0; i < file_path.Length; i++)
+            //Выводим результаты на экран
+            foreach (string task in check)
             {
-                if (file_path.Substring(i, 6) == "ответы")
+                if (!task.Contains("Неверно"))
                 {
-                    name_end = i;
-                    break;
-                }
-            }
-            for (int i = name_end; i >= 0; i--)
-            {
-                if (file_path[i] == '\\')
-                {
-                    name_start = i + 1;
-                    break;
-                }
-            }
-            return file_path.Substring(name_start, name_end - 1 - name_start);
-        }
-
-        //Функция находит правильные ответы участника
-        private string GetFileWithAnswers(string name, string answers)
-        {
-            string path = System.IO.Path.Combine(answers, $"{name}.txt");
-            return path;
-        }
-
-        //Функция улучшает внешний вид правильных ответов
-        private string[] GetBetterView(string right_answers)
-        {
-            using (StreamReader sr = new StreamReader(right_answers))
-            {
-                string[] better_view = new string[27];
-                for (int i = 0; i < 24; i++)
-                {
-                    better_view[i] = sr.ReadLine();
-                }
-                string temp = sr.ReadLine();
-                if (temp.Length > 28)
-                {
-                    temp = temp.Substring(5, temp.Length - 5);
-                    string[] split = temp.Split(' ');
-                    string answer = "25 - ";
-                    for (int i = 0; i < split.Length; i++)
-                    {
-                        answer += split[i];
-                        if (i != split.Length - 1)
-                        {
-                            if (i % 2 == 0 && i != split.Length - 1)
-                            {
-                                answer += " ";
-                            }
-                            else if (i % 2 == 1 && i != split.Length - 1)
-                            {
-                                answer = answer + ", ";
-                            }
-                        }
-                    }
-                    better_view[24] = answer;
-                    better_view[25] = sr.ReadLine();
-                    better_view[26] = sr.ReadLine();
-                    return better_view;
+                    CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.Green });
                 }
                 else
                 {
-                    string task25 = temp;
-                    while (temp.Substring(0, 4) != "26 -")
-                    {
-                        temp = sr.ReadLine();
-                        if (temp == "")
-                            temp = sr.ReadLine();
-                        if (temp.Substring(0, 4) == "26 -")
-                            break;
-                        task25 += $", {temp}";
-                    }
-                    better_view[24] = task25;
-                    better_view[25] = temp;
-                    better_view[26] = sr.ReadLine();
-                    return better_view;
+                    CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.Red });
                 }
             }
-        }
-        //Функция сравнивает ответы участника с правильными ответами, считает количество правильных ответов и выводит неправильные ответы участника
-        private void ComparingAnswers(string right_answers, string user_answers)
-        {
-            int total = 0;
-            string[] better_view = GetBetterView(right_answers);
-            using (StreamReader sr2 = new StreamReader(user_answers))
-            {
-                for (int i = 1; i <= 27; i++)
-                {
-                    string line = better_view[i - 1];
-                    string line2 = sr2.ReadLine();
-                    if (line == line2)
-                    {
-                        CheckedTasks.Items.Add(new ListBoxItem { Content = $"{i}. Верно", Foreground = Brushes.Green });
-                        total += 1;
-                    }
-                    else
-                    {
-                        for (int j = 0; j < line.Length; j++)
-                        {
-                            if (line[j] == '-')
-                            {
-                                if (line2.Contains("%noanswer%"))
-                                {
-                                    CheckedTasks.Items.Add(new ListBoxItem { Content = $"{i}. Неверно | Правильный ответ: {line.Substring(j + 1, line.Length - j - 1)} | Ответ участника: Ответ не дан", Foreground = Brushes.Red });
-                                }
-                                else
-                                {
-                                    CheckedTasks.Items.Add(new ListBoxItem { Content = $"{i}. Неверно | Правильный ответ: {line.Substring(j + 1, line.Length - j - 1)} | Ответ участника: {line2.Substring(j + 1, line2.Length - j - 1)}", Foreground = Brushes.Red });
-                                }
-                                break;
-                            }
-                        }
-                    }
-                }
-            }
-            TotalPoints2.Text = $"{total} из 27";
+
+            //Считаем количество баллов
+            TotalPoints2.Text = EgeOrganizator.Validation.TotalPoints(check);
         }
     }
 }

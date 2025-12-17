@@ -123,5 +123,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EgeOrganizator\EgeOrganizator.csproj">
+      <Project>{e5b25458-710d-4565-89db-559cc601d268}</Project>
+      <Name>EgeOrganizator</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
