@@ -37,7 +37,14 @@ namespace EgeOrganizator
         static public string GetFileWithAnswers(string name, string answers)
         {
             string path = System.IO.Path.Combine(answers, $"{name}.txt");
-            return path;
+            if (File.Exists(path))
+            {
+                return path;
+            }
+            else
+            {
+                throw new ArgumentException();
+            }
         }
 
         //Функция улучшает внешний вид правильных ответов

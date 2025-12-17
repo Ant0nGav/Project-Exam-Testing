@@ -26,27 +26,34 @@ namespace Вид
             //Получили ФИО участника
             string name = EgeOrganizator.Validation.GetNameOfUser(file_path);
 
-            //Получили его ответы
-            string path = EgeOrganizator.Validation.GetFileWithAnswers(name, answers);
-
-            //Проверяем ответы
-            string[] check = EgeOrganizator.Validation.ComparingAnswers(path, file_path);
-
-            //Выводим результаты на экран
-            foreach (string task in check)
+            try
             {
-                if (!task.Contains("Неверно"))
-                {
-                    CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.Green });
-                }
-                else
-                {
-                    CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.Red });
-                }
-            }
+                //Получили его ответы
+                string path = EgeOrganizator.Validation.GetFileWithAnswers(name, answers);
 
-            //Считаем количество баллов
-            TotalPoints2.Text = EgeOrganizator.Validation.TotalPoints(check);
+                //Проверяем ответы
+                string[] check = EgeOrganizator.Validation.ComparingAnswers(path, file_path);
+
+                //Выводим результаты на экран
+                foreach (string task in check)
+                {
+                    if (!task.Contains("Неверно"))
+                    {
+                        CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.Green });
+                    }
+                    else
+                    {
+                        CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.Red });
+                    }
+                }
+
+                //Считаем количество баллов
+                TotalPoints2.Text = EgeOrganizator.Validation.TotalPoints(check);
+            }
+            catch (ArgumentException)
+            {
+                MessageBox.Show("Ответов данного участника нет");
+            }
         }
     }
 }

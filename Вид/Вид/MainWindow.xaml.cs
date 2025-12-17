@@ -57,10 +57,34 @@ namespace Вид
         {
             MessageBox.Show("Укажите файл с ответами");
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.ShowDialog();
-            string file_path = ofd.FileName;
-            Window_Review wr = new Window_Review(file_path, userAnswersPath);
-            wr.ShowDialog();
+            bool valid_path = false;
+            string file_path = "";
+            while (valid_path == false)
+            {
+                ofd.ShowDialog();
+                file_path = ofd.FileName;
+                if (file_path != "")
+                {
+                    if (file_path.Contains("_ответы"))
+                    {
+                        valid_path = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Этот файл не является ответами варианта");
+                        break;
+                    }
+                }
+                else
+                {
+                    break;
+                }
+            }
+            if (valid_path == true)
+            {
+                Window_Review wr = new Window_Review(file_path, userAnswersPath);
+                wr.ShowDialog();
+            }
         }
     }
 }
