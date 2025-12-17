@@ -12,8 +12,6 @@ C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид\obj\Debug\Вид.cspro
 C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид\obj\Debug\Вид.csproj.CoreCompileInputs.cache
 C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид\obj\Debug\Вид.exe
 C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид\obj\Debug\Вид.pdb
-C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид\obj\Debug\Window2.baml
-C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид\obj\Debug\Window2.g.cs
 C:\Users\Z\Desktop\Project\Вид\Вид\bin\Debug\Вид.exe.config
 C:\Users\Z\Desktop\Project\Вид\Вид\bin\Debug\Вид.exe
 C:\Users\Z\Desktop\Project\Вид\Вид\bin\Debug\Вид.pdb
@@ -77,3 +75,6 @@ C:\Users\Z\Desktop\Project_Ege\Вид\Вид\obj\Debug\Вид.exe
 C:\Users\Z\Desktop\Project_Ege\Вид\Вид\obj\Debug\Вид.pdb
 C:\Users\Z\Desktop\Project_Ege\Вид\Вид\bin\Debug\EgeOrganizator.dll
 C:\Users\Z\Desktop\Project_Ege\Вид\Вид\bin\Debug\EgeOrganizator.pdb
+C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид\bin\Debug\EgeOrganizator.dll
+C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид\bin\Debug\EgeOrganizator.pdb
+C:\Users\1\Desktop\ubn\Project-Exam-Testing\Вид\Вид\obj\Debug\Вид.exe.config

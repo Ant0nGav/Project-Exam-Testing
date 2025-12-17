@@ -1,45 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\",
+  "WorkspaceRootPath": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5B25458-710D-4565-89DB-559CC601D268}|EgeOrganizator\\EgeOrganizator.csproj|c:\\users\\z\\desktop\\project_ege\\\u0432\u0438\u0434\\egeorganizator\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5B25458-710D-4565-89DB-559CC601D268}|EgeOrganizator\\EgeOrganizator.csproj|solutionrelative:egeorganizator\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\window_review.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\window_review.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\fioinputdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\fioinputdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\fioinputdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\fioinputdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\window_review.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\window_review.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5B25458-710D-4565-89DB-559CC601D268}|EgeOrganizator\\EgeOrganizator.csproj|C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\egeorganizator\\generation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E5B25458-710D-4565-89DB-559CC601D268}|EgeOrganizator\\EgeOrganizator.csproj|C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\egeorganizator\\generation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5B25458-710D-4565-89DB-559CC601D268}|EgeOrganizator\\EgeOrganizator.csproj|solutionrelative:egeorganizator\\generation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\fioinputdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\fioinputdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\fioinputdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\fioinputdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|c:\\users\\1\\desktop\\ubn\\project-exam-testing\\\u0432\u0438\u0434\\\u0432\u0438\u0434\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|c:\\users\\1\\desktop\\ubn\\project-exam-testing\\\u0432\u0438\u0434\\\u0432\u0438\u0434\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\window_review.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\window_review.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5B25458-710D-4565-89DB-559CC601D268}|EgeOrganizator\\EgeOrganizator.csproj|C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\egeorganizator\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5B25458-710D-4565-89DB-559CC601D268}|EgeOrganizator\\EgeOrganizator.csproj|solutionrelative:egeorganizator\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\window_review.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\window_review.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0432\u0438\u0434\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{07156338-0F68-4DFD-8781-B6F44C544E43}|\u0412\u0438\u0434\\\u0412\u0438\u0434.csproj|solutionrelative:\u0432\u0438\u0434\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{A2983B0F-9FF9-417F-819C-3A457A2E3B1B}|solutionrelative:HTMLPage1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -50,97 +54,123 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Generation.cs",
-              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\EgeOrganizator\\Generation.cs",
-              "RelativeDocumentMoniker": "EgeOrganizator\\Generation.cs",
-              "ToolTip": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\EgeOrganizator\\Generation.cs",
-              "RelativeToolTip": "EgeOrganizator\\Generation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-17T15:24:34.806Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\packages.config",
+              "RelativeDocumentMoniker": "\u0412\u0438\u0434\\packages.config",
+              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\packages.config",
+              "RelativeToolTip": "\u0412\u0438\u0434\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-17T18:15:41.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Generation.cs",
+              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\EgeOrganizator\\Generation.cs",
+              "RelativeDocumentMoniker": "EgeOrganizator\\Generation.cs",
+              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\EgeOrganizator\\Generation.cs",
+              "RelativeToolTip": "EgeOrganizator\\Generation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-17T15:24:34.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Validation.cs",
-              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\EgeOrganizator\\Validation.cs",
+              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\EgeOrganizator\\Validation.cs",
               "RelativeDocumentMoniker": "EgeOrganizator\\Validation.cs",
-              "ToolTip": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\EgeOrganizator\\Validation.cs",
+              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\EgeOrganizator\\Validation.cs",
               "RelativeToolTip": "EgeOrganizator\\Validation.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACsAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAIwCsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-17T15:23:43.106Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "FioInputDialog.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\FioInputDialog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\FioInputDialog.xaml.cs",
               "RelativeDocumentMoniker": "\u0412\u0438\u0434\\FioInputDialog.xaml.cs",
-              "ToolTip": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\FioInputDialog.xaml.cs",
+              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\FioInputDialog.xaml.cs",
               "RelativeToolTip": "\u0412\u0438\u0434\\FioInputDialog.xaml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEBAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-15T15:33:05.081Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FioInputDialog.xaml",
-              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\FioInputDialog.xaml",
-              "RelativeDocumentMoniker": "\u0412\u0438\u0434\\FioInputDialog.xaml",
-              "ToolTip": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\FioInputDialog.xaml",
-              "RelativeToolTip": "\u0412\u0438\u0434\\FioInputDialog.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-15T15:32:53.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\App.xaml",
-              "RelativeDocumentMoniker": "\u0412\u0438\u0434\\App.xaml",
-              "ToolTip": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\App.xaml",
-              "RelativeToolTip": "\u0412\u0438\u0434\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-15T13:48:39.428Z"
+              "WhenOpened": "2025-12-15T15:33:05.081Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Window_Review.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window_Review.xaml.cs",
-              "RelativeDocumentMoniker": "\u0412\u0438\u0434\\Window_Review.xaml.cs",
-              "ToolTip": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window_Review.xaml.cs",
-              "RelativeToolTip": "\u0412\u0438\u0434\\Window_Review.xaml.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADYAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T17:03:24.278Z"
+              "Title": "FioInputDialog.xaml",
+              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\FioInputDialog.xaml",
+              "RelativeDocumentMoniker": "\u0412\u0438\u0434\\FioInputDialog.xaml",
+              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\FioInputDialog.xaml",
+              "RelativeToolTip": "\u0412\u0438\u0434\\FioInputDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-15T15:32:53.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\App.xaml",
+              "RelativeDocumentMoniker": "\u0412\u0438\u0434\\App.xaml",
+              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\App.xaml",
+              "RelativeToolTip": "\u0412\u0438\u0434\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-15T13:48:39.428Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Window_Review.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window_Review.xaml.cs",
+              "RelativeDocumentMoniker": "\u0412\u0438\u0434\\Window_Review.xaml.cs",
+              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window_Review.xaml.cs",
+              "RelativeToolTip": "\u0412\u0438\u0434\\Window_Review.xaml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwDYAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T17:03:24.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Window_Review.xaml",
-              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window_Review.xaml",
+              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window_Review.xaml",
               "RelativeDocumentMoniker": "\u0412\u0438\u0434\\Window_Review.xaml",
-              "ToolTip": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window_Review.xaml",
+              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\Window_Review.xaml",
               "RelativeToolTip": "\u0412\u0438\u0434\\Window_Review.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-14T16:56:37.28Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "HTMLPage1.html",
-              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\HTMLPage1.html",
+              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\HTMLPage1.html",
               "RelativeDocumentMoniker": "HTMLPage1.html",
-              "ToolTip": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\HTMLPage1.html",
+              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\HTMLPage1.html",
               "RelativeToolTip": "HTMLPage1.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
@@ -148,24 +178,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml",
               "RelativeDocumentMoniker": "\u0412\u0438\u0434\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml",
               "RelativeToolTip": "\u0412\u0438\u0434\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-12-06T11:24:33.579Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "\u0412\u0438\u0434\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Z\\Desktop\\Project_Ege\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\1\\Desktop\\ubn\\Project-Exam-Testing\\\u0412\u0438\u0434\\\u0412\u0438\u0434\\MainWindow.xaml.cs",
               "RelativeToolTip": "\u0412\u0438\u0434\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEIAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAEIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-06T11:24:32.843Z",
               "EditorCaption": ""
