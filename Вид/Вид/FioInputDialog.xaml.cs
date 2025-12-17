@@ -77,7 +77,7 @@ namespace Вид
                         MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
-
+                
                 string fullName = txtFullName.Text.Trim();
                 string variantsRootPath = txtVariantsPath.Text;
                 string selectedVariant = cmbVariants.SelectedItem.ToString();
@@ -110,6 +110,57 @@ namespace Вид
         {
             this.DialogResult = false;
             this.Close();
+        }
+
+        private void txtFullName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+        private void txtFullName_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+          
+            foreach (char c in e.Text)
+            {
+                if (!(char.IsLetter(c) || c == ' ' || c == '-' || c == '.' || c == 'ё' || c == 'Ё'))
+                {
+                    e.Handled = true;
+                    return;
+                }
+            }
+
+            if (txtFullName.Text.Length + e.Text.Length > 100)
+            {
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void txtFullName_Pasting(object sender, DataObjectPastingEventArgs e)
+        {
+            if (e.DataObject.GetDataPresent(typeof(string)))
+            {
+                string pasteText = (string)e.DataObject.GetData(typeof(string));
+
+             
+                foreach (char c in pasteText)
+                {
+                    if (!(char.IsLetter(c) || c == ' ' || c == '-' || c == '.' || c == 'ё' || c == 'Ё'))
+                    {
+                        e.CancelCommand();
+                        return;
+                    }
+                }
+
+              
+                if (txtFullName.Text.Length + pasteText.Length > 100)
+                {
+                    e.CancelCommand();
+                }
+            }
+            else
+            {
+                e.CancelCommand();
+            }
         }
     }
 }

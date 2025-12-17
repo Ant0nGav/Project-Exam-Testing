@@ -92,7 +92,7 @@ namespace EgeOrganizator
                 Log($"Задания будут сохранены в: {_userTasksPath}");
                 Log($"Ответы будут сохранены в: {_userAnswersPath}");
 
-                // Создаем структуру для пользователя
+                
                 CreateUserVariant(fullName, _selectedVariantPath);
 
                 return true;
@@ -108,13 +108,13 @@ namespace EgeOrganizator
         {
             Log($"Анализируем структуру папки варианта...");
 
-            // Проверяем существование папки варианта
+            
             if (!Directory.Exists(variantPath))
             {
                 throw new DirectoryNotFoundException($"Папка варианта не найдена: {variantPath}");
             }
 
-            // Проверяем существование папок для сохранения
+            
             if (!Directory.Exists(_userTasksPath))
             {
                 Directory.CreateDirectory(_userTasksPath);
@@ -127,7 +127,7 @@ namespace EgeOrganizator
                 Log($"Создана папка для ответов: {_userAnswersPath}");
             }
 
-            // Ищем папки "задание" и "ответы"
+            
             string[] subDirectories = Directory.GetDirectories(variantPath);
 
             string tasksFolder = null;
@@ -157,11 +157,11 @@ namespace EgeOrganizator
                 throw new DirectoryNotFoundException("Не найдена папка с заданиями в выбранном варианте");
             }
 
-            // Создаем имя для папки заданий
+            
             string userTasksFolderName = $"{fullName.Replace(" ", "")}_задания";
             string userTasksFolderPath = Path.Combine(_userTasksPath, userTasksFolderName);
 
-            // Копируем задания
+            
             Log($"Копируем задания в: {userTasksFolderPath}");
 
             if (Directory.Exists(userTasksFolderPath))
@@ -172,7 +172,7 @@ namespace EgeOrganizator
 
             CopyDirectory(tasksFolder, userTasksFolderPath);
 
-            // Копируем или создаем файл с ответами
+            
             Log($"Создаем файл ответов...");
 
             string userAnswersFileName = $"{fullName.Replace(" ", "")}.txt";
@@ -180,7 +180,7 @@ namespace EgeOrganizator
 
             if (answersFolder != null)
             {
-                // Ищем текстовый файл с ответами в папке answers
+                
                 var answerFiles = Directory.GetFiles(answersFolder, "*.txt");
                 if (answerFiles.Length > 0)
                 {
@@ -190,11 +190,11 @@ namespace EgeOrganizator
                 }
                 else
                 {
-                    // Ищем любые файлы в папке answers
+                    
                     var allFiles = Directory.GetFiles(answersFolder);
                     if (allFiles.Length > 0)
                     {
-                        // Копируем первый найденный файл
+                        
                         answersFile = allFiles[0];
                         File.Copy(answersFile, userAnswersFilePath, true);
                         Log($"Скопирован файл: {Path.GetFileName(answersFile)} -> {userAnswersFileName}");
@@ -208,7 +208,7 @@ namespace EgeOrganizator
             }
             else
             {
-                // Создаем пустой файл ответов
+                
                 CreateAnswerFile(userAnswersFilePath, fullName, variantPath);
                 Log($"Создан новый файл ответов: {userAnswersFileName} (папка ответов не найдена)");
             }
@@ -238,7 +238,7 @@ namespace EgeOrganizator
 
             Directory.CreateDirectory(destinationDir);
 
-            // Копируем все файлы
+            
             foreach (FileInfo file in dir.GetFiles())
             {
                 string targetFilePath = Path.Combine(destinationDir, file.Name);
@@ -246,7 +246,7 @@ namespace EgeOrganizator
                 Log($"  Скопирован файл: {file.Name}");
             }
 
-            // Копируем поддиректории
+            
             foreach (DirectoryInfo subDir in dir.GetDirectories())
             {
                 string newDestinationDir = Path.Combine(destinationDir, subDir.Name);
@@ -258,5 +258,6 @@ namespace EgeOrganizator
         {
             _logCallback?.Invoke($"{DateTime.Now:HH:mm:ss} - {message}");
         }
+
     }
 }
