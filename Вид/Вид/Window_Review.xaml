@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Вид"
         mc:Ignorable="d"
         Title="Проверка варианта" Height="734" Width="1162"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Icon="/LogoDemidovskiyUniversitet.ico">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>

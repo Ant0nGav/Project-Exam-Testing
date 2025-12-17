@@ -8,7 +8,8 @@
         Title="Создание варианта для участника" 
         Height="690" 
         Width="700"
-        WindowStartupLocation="CenterOwner">
+        WindowStartupLocation="CenterOwner"
+        Icon="/LogoDemidovskiyUniversitet.ico">
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>

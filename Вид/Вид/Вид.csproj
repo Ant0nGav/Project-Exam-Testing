@@ -129,5 +129,8 @@
       <Name>EgeOrganizator</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="LogoDemidovskiyUniversitet.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
