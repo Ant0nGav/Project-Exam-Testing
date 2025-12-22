@@ -28,7 +28,7 @@
                 </TextBlock>
             </StackPanel>
             <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="100" Margin="0,276,0,0">
-                <TextBlock x:Name="TotalPoints2" Text="0 из 29" FontSize="18" Foreground="White" FontWeight="Bold" TextAlignment="Center" Margin="0 0 0 20" RenderTransformOrigin="0.507,-0.7" Width="100">
+                <TextBlock x:Name="TotalPoints2" Text="0 из 100" FontSize="18" Foreground="White" FontWeight="Bold" TextAlignment="Center" Margin="0 0 0 20" RenderTransformOrigin="0.507,-0.7" Width="100">
                     <TextBlock.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
