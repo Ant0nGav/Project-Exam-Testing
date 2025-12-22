@@ -39,7 +39,14 @@ namespace Вид
                 {
                     if (!task.Contains("Неверно"))
                     {
-                        CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.Green });
+                        if (task.Contains("Частично"))
+                        {
+                            CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.YellowGreen });
+                        }
+                        else
+                        {
+                            CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.Green });
+                        }
                     }
                     else
                     {

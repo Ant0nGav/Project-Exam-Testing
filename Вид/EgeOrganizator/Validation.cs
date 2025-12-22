@@ -119,19 +119,49 @@ namespace EgeOrganizator
                     }
                     else
                     {
-                        for (int j = 0; j < line.Length; j++)
+                        if (i <= 25)
                         {
-                            if (line[j] == '-')
+                            for (int j = 0; j < line.Length; j++)
                             {
-                                if (line2.Contains("%noanswer%"))
+                                if (line[j] == '-')
                                 {
-                                    checkedtasks[i - 1] = $"{i}. Неверно | Правильный ответ: {line.Substring(j + 1, line.Length - j - 1)} | Ответ участника: Ответ не дан";
+                                    if (line2.Contains("%noanswer%"))
+                                    {
+                                        checkedtasks[i - 1] = $"{i}. Неверно | Правильный ответ: {line.Substring(j + 1, line.Length - j - 1)} | Ответ участника: Ответ не дан";
+                                    }
+                                    else
+                                    {
+                                        checkedtasks[i - 1] = $"{i}. Неверно | Правильный ответ: {line.Substring(j + 1, line.Length - j - 1)} | Ответ участника: {line2.Substring(j + 1, line2.Length - j - 1)}";
+                                    }
+                                    break;
                                 }
-                                else
+                            }
+                        }
+                        else
+                        {
+                            string[] check_right = line.Substring(5, line.Length - 5).Split(' ');
+                            string[] check_wrong = line2.Substring(5, line2.Length - 5).Split(' ');
+                            if ((check_right[0] == check_wrong[1] && check_right[1] == check_wrong[0]) | (check_right[0] == check_wrong[0]) | (check_right[1] == check_wrong[1]))
+                            {
+                                for (int j = 0; j < line.Length; j++)
                                 {
-                                    checkedtasks[i - 1] = $"{i}. Неверно | Правильный ответ: {line.Substring(j + 1, line.Length - j - 1)} | Ответ участника: {line2.Substring(j + 1, line2.Length - j - 1)}";
+                                    if (line[j] == '-')
+                                    {
+                                        checkedtasks[i - 1] = $"{i}. Частично верно | Правильный ответ: {line.Substring(j + 1, line.Length - j - 1)} | Ответ участника: {line2.Substring(j + 1, line2.Length - j - 1)}";
+                                        break;
+                                    }
                                 }
-                                break;
+                            }
+                            else
+                            {
+                                for (int j = 0; j < line.Length; j++)
+                                {
+                                    if (line[j] == '-')
+                                    {
+                                        checkedtasks[i - 1] = $"{i}. Неверно | Правильный ответ: {line.Substring(j + 1, line.Length - j - 1)} | Ответ участника: {line2.Substring(j + 1, line2.Length - j - 1)}";
+                                        break;
+                                    }
+                                }
                             }
                         }
                     }
@@ -140,15 +170,32 @@ namespace EgeOrganizator
             return checkedtasks;
         }
 
+        //Функция рассчитывает баллы
         static public string TotalPoints(string[] checkedtasks)
         {
             int total = 0;
             foreach (string task in checkedtasks)
             {
                 if (!task.Contains("Неверно"))
-                    total++;
+                {
+                    if (task.Substring(0,2) == "26" | task.Substring(0, 2) == "27")
+                    {
+                        if (task.Contains("Частично"))
+                        {
+                            total++;
+                        }
+                        else
+                        {
+                            total += 2;
+                        }
+                    }
+                    else
+                    {
+                        total++;
+                    }
+                }
             }
-            return $"{total} из 27";
+            return $"{total} из 29";
         }
     }
 }
