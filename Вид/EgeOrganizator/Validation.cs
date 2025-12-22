@@ -4,13 +4,57 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 namespace EgeOrganizator
 {
+    //Фасад для организатора
+    public class Organizator_Facade
+    {
+        protected Validation _validation;
+
+        public Organizator_Facade(Validation val)
+        {
+            _validation = val;
+        }
+
+        //Проверяем ответы
+        public string[] Compare(string file_path, string answers)
+        {
+            //Получили ФИО участника
+            string name = _validation.GetNameOfUser(file_path);
+            try
+            {
+                //Получили его ответы
+                string path = _validation.GetFileWithAnswers(name, answers);
+
+                //Более удобный внешний вид
+                string[] better = _validation.GetBetterView(path);
+
+                return _validation.ComparingAnswers(better, file_path);
+
+            }
+            catch (ArgumentException)
+            {
+                MessageBox.Show("Ответов данного участника нет");
+                return new string[] { };
+            }
+        }
+
+        //Считаем баллы
+        public string Result(string[] check)
+        {
+            return _validation.TotalPoints(check);
+        }
+    }
+
+    //Проверка варианта
     public class Validation
     {
         //Функция определяет ФИО участника
-        static public string GetNameOfUser(string file_path)
+        public string GetNameOfUser(string file_path)
         {
             int name_end = 0;
             int name_start = 0;
@@ -34,7 +78,7 @@ namespace EgeOrganizator
         }
 
         //Функция находит правильные ответы участника
-        static public string GetFileWithAnswers(string name, string answers)
+        public string GetFileWithAnswers(string name, string answers)
         {
             string path = System.IO.Path.Combine(answers, $"{name}.txt");
             if (File.Exists(path))
@@ -48,7 +92,7 @@ namespace EgeOrganizator
         }
 
         //Функция улучшает внешний вид правильных ответов
-        static public string[] GetBetterView(string right_answers)
+        public string[] GetBetterView(string right_answers)
         {
             using (StreamReader sr = new StreamReader(right_answers))
             {
@@ -103,9 +147,9 @@ namespace EgeOrganizator
             }
         }
         //Функция сравнивает ответы участника с правильными ответами и выдаёт результат в виде массива строк
-        static public string[] ComparingAnswers(string right_answers, string user_answers)
+        public string[] ComparingAnswers(string[] right_answers, string user_answers)
         {
-            string[] better_view = GetBetterView(right_answers);
+            string[] better_view = right_answers;
             string[] checkedtasks = new string[27];
             using (StreamReader sr2 = new StreamReader(user_answers))
             {
@@ -171,7 +215,7 @@ namespace EgeOrganizator
         }
 
         //Функция рассчитывает баллы
-        static public string TotalPoints(string[] checkedtasks)
+        public string TotalPoints(string[] checkedtasks)
         {
             int total = 0;
             foreach (string task in checkedtasks)

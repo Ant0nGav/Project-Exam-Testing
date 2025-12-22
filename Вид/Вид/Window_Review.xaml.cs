@@ -23,44 +23,32 @@ namespace Вид
         {
             InitializeComponent();
 
-            //Получили ФИО участника
-            string name = EgeOrganizator.Validation.GetNameOfUser(file_path);
+            Organizator_Facade facade = new Organizator_Facade(new EgeOrganizator.Validation());
 
-            try
+            string[] comparing = facade.Compare(file_path, answers);
+
+            //Выводим результаты на экран
+            foreach (string task in comparing)
             {
-                //Получили его ответы
-                string path = EgeOrganizator.Validation.GetFileWithAnswers(name, answers);
-
-                //Проверяем ответы
-                string[] check = EgeOrganizator.Validation.ComparingAnswers(path, file_path);
-
-                //Выводим результаты на экран
-                foreach (string task in check)
+                if (!task.Contains("Неверно"))
                 {
-                    if (!task.Contains("Неверно"))
+                    if (task.Contains("Частично"))
                     {
-                        if (task.Contains("Частично"))
-                        {
-                            CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.YellowGreen });
-                        }
-                        else
-                        {
-                            CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.Green });
-                        }
+                        CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.YellowGreen });
                     }
                     else
                     {
-                        CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.Red });
+                        CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.Green });
                     }
                 }
+                else
+                {
+                    CheckedTasks.Items.Add(new ListBoxItem { Content = task, Foreground = Brushes.Red });
+                }
+            }
 
-                //Считаем количество баллов
-                TotalPoints2.Text = EgeOrganizator.Validation.TotalPoints(check);
-            }
-            catch (ArgumentException)
-            {
-                MessageBox.Show("Ответов данного участника нет");
-            }
+            //Считаем количество баллов
+            TotalPoints2.Text = facade.Result(comparing);
         }
     }
 }
