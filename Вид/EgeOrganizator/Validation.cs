@@ -14,11 +14,11 @@ namespace EgeOrganizator
         {
             int name_end = 0;
             int name_start = 0;
-            for (int i = 0; i < file_path.Length; i++)
+            for (int i = 0; i < file_path.Length - 7; i++)
             {
-                if (file_path.Substring(i, 6) == "ответы")
+                if (file_path.Substring(i, 11) == "_ответы.txt")
                 {
-                    name_end = i;
+                    name_end = i+1;
                     break;
                 }
             }
